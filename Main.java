@@ -1,8 +1,17 @@
 
 class Main {
+
 	public static void main(String[] args) {
-		String org = "Hello Java";
-		String orgReverse = new StringBuilder(org).reverse().toString();
-		System.out.println(orgReverse);
+		System.out.println(reverseString("Hello Java"));
+	}
+
+	/**
+	 * Reverse a String
+	 *
+	 * @param str The String to reverse
+	 * @return The reversed String
+	 */
+	private static String reverseString(String str) {
+		return new StringBuilder(str).reverse().toString();
 	}
 }
